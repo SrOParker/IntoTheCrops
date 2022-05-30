@@ -13,4 +13,4 @@ Grab your trustworthy oil lantern and explore an eldritch cornfield that is tryi
 
 <h6 align="center"><a href="https://www.youtube.com/watch?v=KhY32brBXKI"> Trailer - Gameplay </a></h6>
 <h6 align="center"><a href="https://pop-corn-games.itch.io/into-the-crops"> itch.io page </a></h6>
-<p align="center"><img src="" /></p>
+<p align="center"><img src="./caratula.png" /></p>

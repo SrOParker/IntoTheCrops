@@ -1,0 +1,140 @@
+auto& Colilvl4_01 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_01 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_01 );
+man_e.addTagToEntity<TWall>(Colilvl4_01 );
+man_e.defineCMP<CPhysics>(Colilvl4_012 , CPhysics{.x= -3.3646833896636963 , .y = 0.005483582615852356, .z = -3.754791736602783});
+man_e.defineCMP<CRenderGL>(Colilvl4_01 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_01.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_18 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_18 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_18 );
+man_e.addTagToEntity<TWall>(Colilvl4_18 );
+man_e.defineCMP<CPhysics>(Colilvl4_182 , CPhysics{.x= 3.3646833896636963 , .y = 0.005483582615852356, .z = -3.754791736602783});
+man_e.defineCMP<CRenderGL>(Colilvl4_18 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_18.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_17 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_17 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_17 );
+man_e.addTagToEntity<TWall>(Colilvl4_17 );
+man_e.defineCMP<CPhysics>(Colilvl4_172 , CPhysics{.x= 10.581685066223145 , .y = 0.005483582615852356, .z = 7.168239116668701});
+man_e.defineCMP<CRenderGL>(Colilvl4_17 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_17.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_02 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_02 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_02 );
+man_e.addTagToEntity<TWall>(Colilvl4_02 );
+man_e.defineCMP<CPhysics>(Colilvl4_022 , CPhysics{.x= -10.679211616516113 , .y = 0.005483582615852356, .z = 7.168239116668701});
+man_e.defineCMP<CRenderGL>(Colilvl4_02 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_02.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_16 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_16 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_16 );
+man_e.addTagToEntity<TWall>(Colilvl4_16 );
+man_e.defineCMP<CPhysics>(Colilvl4_162 , CPhysics{.x= 18.237558364868164 , .y = 0.005483582615852356, .z = 13.758806228637695});
+man_e.defineCMP<CRenderGL>(Colilvl4_16 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_16.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_15 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_15 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_15 );
+man_e.addTagToEntity<TWall>(Colilvl4_15 );
+man_e.defineCMP<CPhysics>(Colilvl4_152 , CPhysics{.x= 15.753433227539062 , .y = 0.005483582615852356, .z = 20.236865997314453});
+man_e.defineCMP<CRenderGL>(Colilvl4_15 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_15.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_14 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_14 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_14 );
+man_e.addTagToEntity<TWall>(Colilvl4_14 );
+man_e.defineCMP<CPhysics>(Colilvl4_142 , CPhysics{.x= 13.263679504394531 , .y = 0.005483582615852356, .z = 23.79696273803711});
+man_e.defineCMP<CRenderGL>(Colilvl4_14 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_14.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_05 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_05 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_05 );
+man_e.addTagToEntity<TWall>(Colilvl4_05 );
+man_e.defineCMP<CPhysics>(Colilvl4_052 , CPhysics{.x= -13.214914321899414 , .y = 0.005483582615852356, .z = 23.79696273803711});
+man_e.defineCMP<CRenderGL>(Colilvl4_05 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_05.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_03 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_03 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_03 );
+man_e.addTagToEntity<TWall>(Colilvl4_03 );
+man_e.defineCMP<CPhysics>(Colilvl4_032 , CPhysics{.x= -18.18879508972168 , .y = 0.005483582615852356, .z = 13.758806228637695});
+man_e.defineCMP<CRenderGL>(Colilvl4_03 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_03.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_04 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_04 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_04 );
+man_e.addTagToEntity<TWall>(Colilvl4_04 );
+man_e.defineCMP<CPhysics>(Colilvl4_042 , CPhysics{.x= -15.796566009521484 , .y = 0.005483582615852356, .z = 20.236865997314453});
+man_e.defineCMP<CRenderGL>(Colilvl4_04 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_04.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_10 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_10 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_10 );
+man_e.addTagToEntity<TWall>(Colilvl4_10 );
+man_e.defineCMP<CPhysics>(Colilvl4_102 , CPhysics{.x= -0.04859352111816406 , .y = 0.005483582615852356, .z = 37.304100036621094});
+man_e.defineCMP<CRenderGL>(Colilvl4_10 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_10.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_12 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_12 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_12 );
+man_e.addTagToEntity<TWall>(Colilvl4_12 );
+man_e.defineCMP<CPhysics>(Colilvl4_122 , CPhysics{.x= 10.630449295043945 , .y = 0.005483582615852356, .z = 31.176849365234375});
+man_e.defineCMP<CRenderGL>(Colilvl4_12 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_12.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_07 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_07 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_07 );
+man_e.addTagToEntity<TWall>(Colilvl4_07 );
+man_e.defineCMP<CPhysics>(Colilvl4_072 , CPhysics{.x= -10.651857376098633 , .y = 0.005483582615852356, .z = 31.176849365234375});
+man_e.defineCMP<CRenderGL>(Colilvl4_07 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_07.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_13 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_13 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_13 );
+man_e.addTagToEntity<TWall>(Colilvl4_13 );
+man_e.defineCMP<CPhysics>(Colilvl4_132 , CPhysics{.x= 11.704373359680176 , .y = 0.005483582615852356, .z = 27.434362411499023});
+man_e.defineCMP<CRenderGL>(Colilvl4_13 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_13.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_06 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_06 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_06 );
+man_e.addTagToEntity<TWall>(Colilvl4_06 );
+man_e.defineCMP<CPhysics>(Colilvl4_062 , CPhysics{.x= -11.744196891784668 , .y = 0.005483582615852356, .z = 27.434362411499023});
+man_e.defineCMP<CRenderGL>(Colilvl4_06 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_06.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_11 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_11 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_11 );
+man_e.addTagToEntity<TWall>(Colilvl4_11 );
+man_e.defineCMP<CPhysics>(Colilvl4_112 , CPhysics{.x= 7.851934432983398 , .y = 0.005483582615852356, .z = 34.79819869995117});
+man_e.defineCMP<CRenderGL>(Colilvl4_11 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_11.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_08 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_08 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_08 );
+man_e.addTagToEntity<TWall>(Colilvl4_08 );
+man_e.defineCMP<CPhysics>(Colilvl4_082 , CPhysics{.x= -8.120380401611328 , .y = 0.005483582615852356, .z = 34.79819869995117});
+man_e.defineCMP<CRenderGL>(Colilvl4_08 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_08.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_09 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_09 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_09 );
+man_e.addTagToEntity<TWall>(Colilvl4_09 );
+man_e.defineCMP<CPhysics>(Colilvl4_092 , CPhysics{.x= -5.518178939819336 , .y = 0.005483582615852356, .z = 35.93540573120117});
+man_e.defineCMP<CRenderGL>(Colilvl4_09 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_09.obj", glm::vec3(0,0,0))});
+
+auto& Colilvl4_11.001 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Colilvl4_11.001 );
+man_e.addTagToEntity<TCollisionable>(Colilvl4_11.001 );
+man_e.addTagToEntity<TWall>(Colilvl4_11.001 );
+man_e.defineCMP<CPhysics>(Colilvl4_11.0012 , CPhysics{.x= 5.318161964416504 , .y = 0.005483582615852356, .z = 35.93540573120117});
+man_e.defineCMP<CRenderGL>(Colilvl4_11.001 , CRenderGL{.modelMatrix = Model("assets/level4/Colilvl4_11.001.obj", glm::vec3(0,0,0))});
+
+auto& Transitionlvl4to2 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Transitionlvl4to2 );
+man_e.addTagToEntity<TCollisionable>(Transitionlvl4to2 );
+man_e.addTagToEntity<TWall>(Transitionlvl4to2 );
+man_e.defineCMP<CPhysics>(Transitionlvl4to22 , CPhysics{.x= 0.0 , .y = 0.04087495803833008, .z = -11.33956527709961});
+man_e.defineCMP<CRenderGL>(Transitionlvl4to2 , CRenderGL{.modelMatrix = Model("assets/level4/Transitionlvl4to2.obj", glm::vec3(0,0,0))});
+

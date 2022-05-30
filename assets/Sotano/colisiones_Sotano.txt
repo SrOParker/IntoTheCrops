@@ -1,0 +1,126 @@
+auto& ColiS12 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS12 );
+man_e.addTagToEntity<TCollisionable>(ColiS12 );
+man_e.addTagToEntity<TWall>(ColiS12 );
+man_e.defineCMP<CPhysics>(ColiS12 , CPhysics{.x= -8.76849365234375 , .y = -0.04288250207901001, .z = -20.21274757385254});
+man_e.defineCMP<CRenderGL>(ColiS12 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS12.obj", glm::vec3(0,0,0))});
+
+auto& ColiS16 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS16 );
+man_e.addTagToEntity<TCollisionable>(ColiS16 );
+man_e.addTagToEntity<TWall>(ColiS16 );
+man_e.defineCMP<CPhysics>(ColiS16 , CPhysics{.x= -8.447691917419434 , .y = -0.02438175678253174, .z = -33.15758514404297});
+man_e.defineCMP<CRenderGL>(ColiS16 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS16.obj", glm::vec3(0,0,0))});
+
+auto& ColiS10 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS10 );
+man_e.addTagToEntity<TCollisionable>(ColiS10 );
+man_e.addTagToEntity<TWall>(ColiS10 );
+man_e.defineCMP<CPhysics>(ColiS10 , CPhysics{.x= -18.586105346679688 , .y = -0.04288250207901001, .z = -30.242158889770508});
+man_e.defineCMP<CRenderGL>(ColiS10 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS10.obj", glm::vec3(0,0,0))});
+
+auto& ColiS13 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS13 );
+man_e.addTagToEntity<TCollisionable>(ColiS13 );
+man_e.addTagToEntity<TWall>(ColiS13 );
+man_e.defineCMP<CPhysics>(ColiS13 , CPhysics{.x= -1.669561743736267 , .y = -0.02438175678253174, .z = -22.511762619018555});
+man_e.defineCMP<CRenderGL>(ColiS13 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS13.obj", glm::vec3(0,0,0))});
+
+auto& ColiS15 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS15 );
+man_e.addTagToEntity<TCollisionable>(ColiS15 );
+man_e.addTagToEntity<TWall>(ColiS15 );
+man_e.defineCMP<CPhysics>(ColiS15 , CPhysics{.x= -6.00199031829834 , .y = -0.02438175678253174, .z = -35.55625534057617});
+man_e.defineCMP<CRenderGL>(ColiS15 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS15.obj", glm::vec3(0,0,0))});
+
+auto& ColiS14 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS14 );
+man_e.addTagToEntity<TCollisionable>(ColiS14 );
+man_e.addTagToEntity<TWall>(ColiS14 );
+man_e.defineCMP<CPhysics>(ColiS14 , CPhysics{.x= -0.0040760040283203125 , .y = -0.02438175678253174, .z = -24.974567413330078});
+man_e.defineCMP<CRenderGL>(ColiS14 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS14.obj", glm::vec3(0,0,0))});
+
+auto& ColiS1 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS1 );
+man_e.addTagToEntity<TCollisionable>(ColiS1 );
+man_e.addTagToEntity<TWall>(ColiS1 );
+man_e.defineCMP<CPhysics>(ColiS1 , CPhysics{.x= 0.3372687101364136 , .y = -0.02438175678253174, .z = 2.027954339981079});
+man_e.defineCMP<CRenderGL>(ColiS1 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS1.obj", glm::vec3(0,0,0))});
+
+auto& ColiS2 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS2 );
+man_e.addTagToEntity<TCollisionable>(ColiS2 );
+man_e.addTagToEntity<TWall>(ColiS2 );
+man_e.defineCMP<CPhysics>(ColiS2 , CPhysics{.x= 1.3169159889221191 , .y = -0.04288250207901001, .z = -9.47962760925293});
+man_e.defineCMP<CRenderGL>(ColiS2 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS2.obj", glm::vec3(0,0,0))});
+
+auto& ColiS3 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS3 );
+man_e.addTagToEntity<TCollisionable>(ColiS3 );
+man_e.addTagToEntity<TWall>(ColiS3 );
+man_e.defineCMP<CPhysics>(ColiS3 , CPhysics{.x= -1.3404326438903809 , .y = -0.04288250207901001, .z = -9.47962760925293});
+man_e.defineCMP<CRenderGL>(ColiS3 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS3.obj", glm::vec3(0,0,0))});
+
+auto& ColiS4 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS4 );
+man_e.addTagToEntity<TCollisionable>(ColiS4 );
+man_e.addTagToEntity<TWall>(ColiS4 );
+man_e.defineCMP<CPhysics>(ColiS4 , CPhysics{.x= 4.201246738433838 , .y = -0.04288250207901001, .z = -20.246610641479492});
+man_e.defineCMP<CRenderGL>(ColiS4 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS4.obj", glm::vec3(0,0,0))});
+
+auto& ColiS5 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS5 );
+man_e.addTagToEntity<TCollisionable>(ColiS5 );
+man_e.addTagToEntity<TWall>(ColiS5 );
+man_e.defineCMP<CPhysics>(ColiS5 , CPhysics{.x= 7.58760404586792 , .y = -0.04288250207901001, .z = -30.051437377929688});
+man_e.defineCMP<CRenderGL>(ColiS5 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS5.obj", glm::vec3(0,0,0))});
+
+auto& ColiS6 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS6 );
+man_e.addTagToEntity<TCollisionable>(ColiS6 );
+man_e.addTagToEntity<TWall>(ColiS6 );
+man_e.defineCMP<CPhysics>(ColiS6 , CPhysics{.x= -0.41237643361091614 , .y = -0.04288250207901001, .z = -39.87419891357422});
+man_e.defineCMP<CRenderGL>(ColiS6 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS6.obj", glm::vec3(0,0,0))});
+
+auto& ColiS7 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS7 );
+man_e.addTagToEntity<TCollisionable>(ColiS7 );
+man_e.addTagToEntity<TWall>(ColiS7 );
+man_e.defineCMP<CPhysics>(ColiS7 , CPhysics{.x= -8.302586555480957 , .y = -0.04288250207901001, .z = -37.91709899902344});
+man_e.defineCMP<CRenderGL>(ColiS7 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS7.obj", glm::vec3(0,0,0))});
+
+auto& ColiS8 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS8 );
+man_e.addTagToEntity<TCollisionable>(ColiS8 );
+man_e.addTagToEntity<TWall>(ColiS8 );
+man_e.defineCMP<CPhysics>(ColiS8 , CPhysics{.x= -14.441207885742188 , .y = -0.04288250207901001, .z = -35.48423767089844});
+man_e.defineCMP<CRenderGL>(ColiS8 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS8.obj", glm::vec3(0,0,0))});
+
+auto& ColiS9 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS9 );
+man_e.addTagToEntity<TCollisionable>(ColiS9 );
+man_e.addTagToEntity<TWall>(ColiS9 );
+man_e.defineCMP<CPhysics>(ColiS9 , CPhysics{.x= -21.088054656982422 , .y = -0.04288250207901001, .z = -32.898033142089844});
+man_e.defineCMP<CRenderGL>(ColiS9 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS9.obj", glm::vec3(0,0,0))});
+
+auto& ColiS11 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiS11 );
+man_e.addTagToEntity<TCollisionable>(ColiS11 );
+man_e.addTagToEntity<TWall>(ColiS11 );
+man_e.defineCMP<CPhysics>(ColiS11 , CPhysics{.x= -16.658702850341797 , .y = -0.04288250207901001, .z = -24.95364761352539});
+man_e.defineCMP<CRenderGL>(ColiS11 , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiS11.obj", glm::vec3(0,0,0))});
+
+auto& TransS_to_Granero = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(TransS_to_Granero );
+man_e.addTagToEntity<TCollisionable>(TransS_to_Granero );
+man_e.addTagToEntity<TWall>(TransS_to_Granero );
+man_e.defineCMP<CPhysics>(TransS_to_Granero , CPhysics{.x= 0.06502115726470947 , .y = 0.0, .z = 2.4250199794769287});
+man_e.defineCMP<CRenderGL>(TransS_to_Granero , CRenderGL{.modelMatrix = Model("assets/Sotano/TransS_to_Granero.obj", glm::vec3(0,0,0))});
+
+auto& ColiLoop = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLoop );
+man_e.addTagToEntity<TCollisionable>(ColiLoop );
+man_e.addTagToEntity<TWall>(ColiLoop );
+man_e.defineCMP<CPhysics>(ColiLoop , CPhysics{.x= -10.565428733825684 , .y = 0.0, .z = -25.942880630493164});
+man_e.defineCMP<CRenderGL>(ColiLoop , CRenderGL{.modelMatrix = Model("assets/Sotano/ColiLoop.obj", glm::vec3(0,0,0))});
+

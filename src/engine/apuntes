@@ -1,0 +1,213 @@
+/*
+
+
+
+Sobre el funcionamiento de OPENGL
+
+la pipeline grafica toma datos y los transfoma mediante la GPU (shaders) y cada estado requiere informcion del anterior
+
+Esto nos permite editarlos de manera fina en como se procesa estos
+
+En concreto podemos editar el vertex shader, geometry shader y fragment shader.
+
+La pipeline toma como informacion base vertex data, puntos en el espacio.
+
+El vertex shader transforma las coordenadas 3d raw en informacion 3d procesable
+
+El siguiente paso, shape assembly coge los puntos y los une para hacer primitivas
+
+El geometry recibe del shape los puntos y formas para luego crear otras en base a ellas (triangulacion, etc)
+
+El output del geometry se pasa al rasterization, donde mapea estos vertices a la pantalla en si, resultando en fragmentos para el fragment shader
+(fragmento = informaicon para renderizar un pixel)
+
+Antes de correr el fragment shader se realiza clipping y otras operaciones para eliminar geometria innecesaria.
+
+El fragment ya tiene info para calcular el color final de un pixel, iluimminacion, sombra, etc
+
+Finalmente cuando se haga todo esto, pasa por alpha testing y blending (opacidades etc)
+
+
+ /* EJEMPLO DE TRANSFORMACIONES
+    glm::vec4 vec(1.0f, 0.0f, 0.0f, 1.0f);
+    glm::mat4 trans = glm::mat4(1.0f);
+    std::cout << vec.x << "  " << vec.y<< "  " << vec.z << std::endl;
+
+    trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0, 0.0, 1.0)); //rotar 90 grados (pasados a rad) en el eje Z
+    trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));  */
+
+
+    //CAMARA
+
+    //glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);  //necesitamos pos, direccion a la que mira vector apuntando a la dcha y a arriba
+    //glm::vec3 cameraTarget = glm::vec3(0.0f, 0.0f, 0.0f);
+    //glm::vec3 cameraZAxis = glm::normalize(cameraPos - cameraTarget);
+    // cogemos un punto donde apunta la camara y mediante la substraccion de vectores conseguimos un vecotr que apunte en la direccion contraria aka el eje Z
+    //glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f); 
+    //glm::vec3 cameraXAxis = glm::normalize(glm::cross(up, cameraZAxis)); // cruzamos Z e Y para quedarnos con la X
+
+    //siguiendo la misma logica, si ahora cruzamos un eje X con Z que ya tenemos los datos obtendremos el Y
+    //glm::vec3 cameraYAxis = glm::cross(cameraZAxis, cameraXAxis);
+
+    //glm::mat4 view;
+    //view = glm::lookAt(glm::vec3(0.0f, 0.0f, 3.0f),  //poscamara
+  	//                    glm::vec3(0.0f, 0.0f, 0.0f), //cameratarget 
+  	//                    glm::vec3(0.0f, 1.0f, 0.0f)); //vector hacia arriba para generar cross products como en el ejemplo de arriba
+
+
+
+
+ /*
+
+int nrAttributes;
+glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
+std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
+ 
+ Nuestro OpenGL soporta 16 atributos de vertice de 4 cada uno.
+
+  A vector in GLSL is a 1,2,3 or 4 component container for any of the basic types just mentioned. They can take the following form (n represents the number of components):
+
+    vecn: the default vector of n floats.
+    bvecn: a vector of n booleans.
+    ivecn: a vector of n integers.
+    uvecn: a vector of n unsigned integers.
+    dvecn: a vector of n double components.
+
+Con x,y,z,w para las componentes o rgba o stpq para coordenadas de texturas
+
+se pueden manipular los datos de puta madre en plan
+
+vec2 vector2cosas = ( 1, 0.5)
+
+vec4 de2a4 = vector2cosas.xyxx
+
+de2a4 == (1, 0,5 , 1, 1)
+
+
+ */
+
+
+/*
+
+   glm::vec3 cubePositions[] = {
+        glm::vec3( 0.0f,  0.0f,  0.0f), 
+        glm::vec3( 2.0f,  5.0f, -15.0f), 
+        glm::vec3(-1.5f, -2.2f, -2.5f),  
+        glm::vec3(-3.8f, -2.0f, -12.3f),  
+        glm::vec3( 2.4f, -0.4f, -3.5f),  
+        glm::vec3(-1.7f,  3.0f, -7.5f),  
+        glm::vec3( 1.3f, -2.0f, -2.5f),  
+        glm::vec3( 1.5f,  2.0f, -2.5f), 
+        glm::vec3( 1.5f,  0.2f, -1.5f), 
+        glm::vec3(-1.3f,  1.0f, -1.5f)  
+    };
+    //Guardado de datos de vertices en mem
+   float vertices[] = {
+    -0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 0.0f,
+     0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+     0.5f,  0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+     0.5f,  0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+    -0.5f,  0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+    -0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 0.0f,
+
+    -0.5f, -0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 0.0f,
+     0.5f, -0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+     0.5f,  0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+     0.5f,  0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+    -0.5f,  0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+    -0.5f, -0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 0.0f,
+
+    -0.5f,  0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+    -0.5f,  0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+    -0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+    -0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+    -0.5f, -0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 0.0f,
+    -0.5f,  0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+
+     0.5f,  0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+     0.5f,  0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+     0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+     0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+     0.5f, -0.5f,  0.5f,  0.3f, 0.3f, 0.3f,    0.0f, 0.0f,
+     0.5f,  0.5f,  0.5f,  0.3f, 0.3f, 0.3f,    1.0f, 0.0f,
+
+    -0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+     0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+     0.5f, -0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+     0.5f, -0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+    -0.5f, -0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 0.0f,
+    -0.5f, -0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f,
+
+    -0.5f,  0.5f, -0.5f,  0.3f, 0.3f, 0.3f,    0.0f, 1.0f,
+     0.5f,  0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 1.0f,
+     0.5f,  0.5f,  0.5f, 0.3f, 0.3f, 0.3f,     1.0f, 0.0f,
+     0.5f,  0.5f,  0.5f,  0.3f, 0.3f, 0.3f,    1.0f, 0.0f,
+    -0.5f,  0.5f,  0.5f,  0.3f, 0.3f, 0.3f,    0.0f, 0.0f,
+    -0.5f,  0.5f, -0.5f, 0.3f, 0.3f, 0.3f,     0.0f, 1.0f
+};
+    unsigned int indices[] = {  // note that we start from 0!
+    0, 1, 3,   // first triangle
+    1, 2, 3    // second triangle
+    };  
+
+
+
+    unsigned int EBO; //EBOs sirven para evitar overlaps de vertices guardando objetos mediante indices de recorrido
+    //glGenBuffers(1, &EBO);
+    unsigned int VBO; //Vertex Buffer Object, guarda grandes numeros de vertices en CPU para enviarlas de golpe a GPU en vez de 1 a 1 
+    unsigned int VAO;
+    glGenVertexArrays(1,&VAO);
+    glGenBuffers(1,&VBO); //los objetos en openGL tienen IDS correspondientes, dirs de mem, lo genereamos
+    glGenBuffers(1,&EBO);
+    glBindVertexArray(VAO); //bindea VBOS subsecuentes a un VAO
+    
+    glBindBuffer(GL_ARRAY_BUFFER,VBO); //este buffer VBO es del tipo array buffer
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices),vertices, GL_STATIC_DRAW); // hace sitio en mem y guarda los datos, tipo, tam, puntero a datos y uso
+    
+    //glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    //glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW); 
+
+    //interpretacion de la info de los vertices 
+
+    //Each vertex attribute takes its data from memory managed by a VBO and which VBO it takes its data from (you can have multiple VBOs)
+    // is determined by the VBO currently bound to GL_ARRAY_BUFFER when calling glVertexAttribPointer
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0); // 0, location=0, el vertex,   3 porque vec3 se compone de 3 datos, tipo de dato
+    // si queremos que se normalize los datos, tamaño (3* float porque vec3 = 3 floats), offset al inicio (0)
+    glEnableVertexAttribArray(0);  
+
+    //la info del color
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3*sizeof(float))); //nuestro array es XYZ_RGB_TX por elemento, tamaño 6, y el RBG se inicia con offset de 3 por XYZ 
+    glEnableVertexAttribArray(1); 
+
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6*sizeof(float)));
+    glEnableVertexAttribArray(2); 
+
+    //TEXTURAS
+
+    int width, height, nrChannels;
+    stbi_set_flip_vertically_on_load(true);  
+    Textures OurTexture("textures/peque.jpg",width, height, nrChannels,1);
+    Textures OurTexture2("textures/stupid2.png",width, height, nrChannels,0);
+    //WIREFRAME
+    if(wireframeEnabled)
+    {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    }
+
+    OurShader.use(); //updating a uniform does require you to first use the program (by calling glUseProgram)
+    //, because it sets the uniform on the currently active shader program. 
+    glUniform1i(glGetUniformLocation(OurShader.ID, "OurTexture"), 0); // set it manually
+    OurShader.setInt("OurTexture2", 1); // or with shader class
+
+
+
+
+
+
+
+*/
+
+
+
+

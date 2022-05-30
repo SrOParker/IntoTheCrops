@@ -1,0 +1,147 @@
+auto& Col_CasaM = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM );
+man_e.addTagToEntity<TWall>(Col_CasaM );
+man_e.defineCMP<CPhysics>(Col_CasaM , CPhysics{.x= 4.5418782234191895 , .y = 1.1905637979507446, .z = -2.486508846282959});
+man_e.defineCMP<CRenderGL>(Col_CasaM , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.001 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.001 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.001 );
+man_e.addTagToEntity<TWall>(Col_CasaM.001 );
+man_e.defineCMP<CPhysics>(Col_CasaM.001 , CPhysics{.x= 13.228334426879883 , .y = 1.1905637979507446, .z = 0.6826737523078918});
+man_e.defineCMP<CRenderGL>(Col_CasaM.001 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.001.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.002 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.002 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.002 );
+man_e.addTagToEntity<TWall>(Col_CasaM.002 );
+man_e.defineCMP<CPhysics>(Col_CasaM.002 , CPhysics{.x= 11.334111213684082 , .y = 1.1905635595321655, .z = 5.655010223388672});
+man_e.defineCMP<CRenderGL>(Col_CasaM.002 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.002.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.003 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.003 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.003 );
+man_e.addTagToEntity<TWall>(Col_CasaM.003 );
+man_e.defineCMP<CPhysics>(Col_CasaM.003 , CPhysics{.x= 9.418591499328613 , .y = 1.1905635595321655, .z = 6.460563659667969});
+man_e.defineCMP<CRenderGL>(Col_CasaM.003 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.003.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.004 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.004 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.004 );
+man_e.addTagToEntity<TWall>(Col_CasaM.004 );
+man_e.defineCMP<CPhysics>(Col_CasaM.004 , CPhysics{.x= 17.7946720123291 , .y = 1.1905635595321655, .z = 6.756747722625732});
+man_e.defineCMP<CRenderGL>(Col_CasaM.004 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.004.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.005 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.005 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.005 );
+man_e.addTagToEntity<TWall>(Col_CasaM.005 );
+man_e.defineCMP<CPhysics>(Col_CasaM.005 , CPhysics{.x= 19.352590560913086 , .y = 1.057325005531311, .z = 0.12855558097362518});
+man_e.defineCMP<CRenderGL>(Col_CasaM.005 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.005.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.006 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.006 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.006 );
+man_e.addTagToEntity<TWall>(Col_CasaM.006 );
+man_e.defineCMP<CPhysics>(Col_CasaM.006 , CPhysics{.x= 19.106706619262695 , .y = 1.057325005531311, .z = -2.2392237186431885});
+man_e.defineCMP<CRenderGL>(Col_CasaM.006 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.006.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.007 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.007 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.007 );
+man_e.addTagToEntity<TWall>(Col_CasaM.007 );
+man_e.defineCMP<CPhysics>(Col_CasaM.007 , CPhysics{.x= 14.086084365844727 , .y = 1.057325005531311, .z = -0.9079595804214478});
+man_e.defineCMP<CRenderGL>(Col_CasaM.007 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.007.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.008 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.008 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.008 );
+man_e.addTagToEntity<TWall>(Col_CasaM.008 );
+man_e.defineCMP<CPhysics>(Col_CasaM.008 , CPhysics{.x= 4.523681163787842 , .y = 1.057325005531311, .z = -2.1542654037475586});
+man_e.defineCMP<CRenderGL>(Col_CasaM.008 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.008.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.009 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.009 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.009 );
+man_e.addTagToEntity<TWall>(Col_CasaM.009 );
+man_e.defineCMP<CPhysics>(Col_CasaM.009 , CPhysics{.x= 2.0586142539978027 , .y = 1.053159236907959, .z = -5.176635265350342});
+man_e.defineCMP<CRenderGL>(Col_CasaM.009 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.009.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.010 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.010 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.010 );
+man_e.addTagToEntity<TWall>(Col_CasaM.010 );
+man_e.defineCMP<CPhysics>(Col_CasaM.010 , CPhysics{.x= 5.241843223571777 , .y = 1.0047500133514404, .z = -10.175806045532227});
+man_e.defineCMP<CRenderGL>(Col_CasaM.010 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.010.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.011 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.011 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.011 );
+man_e.addTagToEntity<TWall>(Col_CasaM.011 );
+man_e.defineCMP<CPhysics>(Col_CasaM.011 , CPhysics{.x= -0.028349488973617554 , .y = 1.0047500133514404, .z = -8.645856857299805});
+man_e.defineCMP<CRenderGL>(Col_CasaM.011 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.011.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.012 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.012 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.012 );
+man_e.addTagToEntity<TWall>(Col_CasaM.012 );
+man_e.defineCMP<CPhysics>(Col_CasaM.012 , CPhysics{.x= 0.11085638403892517 , .y = 0.6356117725372314, .z = -10.963936805725098});
+man_e.defineCMP<CRenderGL>(Col_CasaM.012 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.012.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.013 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.013 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.013 );
+man_e.addTagToEntity<TWall>(Col_CasaM.013 );
+man_e.defineCMP<CPhysics>(Col_CasaM.013 , CPhysics{.x= 0.08703248202800751 , .y = 0.6356117725372314, .z = -12.894588470458984});
+man_e.defineCMP<CRenderGL>(Col_CasaM.013 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.013.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.014 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.014 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.014 );
+man_e.addTagToEntity<TWall>(Col_CasaM.014 );
+man_e.defineCMP<CPhysics>(Col_CasaM.014 , CPhysics{.x= 8.897323608398438 , .y = 0.6356117725372314, .z = -12.899188041687012});
+man_e.defineCMP<CRenderGL>(Col_CasaM.014 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.014.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.015 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.015 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.015 );
+man_e.addTagToEntity<TWall>(Col_CasaM.015 );
+man_e.defineCMP<CPhysics>(Col_CasaM.015 , CPhysics{.x= 8.02364730834961 , .y = 0.6356117725372314, .z = -6.186954021453857});
+man_e.defineCMP<CRenderGL>(Col_CasaM.015 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.015.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.016 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.016 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.016 );
+man_e.addTagToEntity<TWall>(Col_CasaM.016 );
+man_e.defineCMP<CPhysics>(Col_CasaM.016 , CPhysics{.x= 16.681171417236328 , .y = 0.6356117129325867, .z = -7.4765801429748535});
+man_e.defineCMP<CRenderGL>(Col_CasaM.016 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.016.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.017 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.017 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.017 );
+man_e.addTagToEntity<TWall>(Col_CasaM.017 );
+man_e.defineCMP<CPhysics>(Col_CasaM.017 , CPhysics{.x= 19.787002563476562 , .y = 0.6356118321418762, .z = -7.567648887634277});
+man_e.defineCMP<CRenderGL>(Col_CasaM.017 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.017.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.018 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.018 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.018 );
+man_e.addTagToEntity<TWall>(Col_CasaM.018 );
+man_e.defineCMP<CPhysics>(Col_CasaM.018 , CPhysics{.x= 12.461625099182129 , .y = 0.6356118321418762, .z = -3.6436760425567627});
+man_e.defineCMP<CRenderGL>(Col_CasaM.018 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.018.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.019 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.019 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.019 );
+man_e.addTagToEntity<TWall>(Col_CasaM.019 );
+man_e.defineCMP<CPhysics>(Col_CasaM.019 , CPhysics{.x= 12.461625099182129 , .y = 0.6356118321418762, .z = -12.255107879638672});
+man_e.defineCMP<CRenderGL>(Col_CasaM.019 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.019.obj", glm::vec3(0,0,0))});
+
+auto& Col_CasaM.020 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Col_CasaM.020 );
+man_e.addTagToEntity<TCollisionable>(Col_CasaM.020 );
+man_e.addTagToEntity<TWall>(Col_CasaM.020 );
+man_e.defineCMP<CPhysics>(Col_CasaM.020 , CPhysics{.x= 14.674601554870605 , .y = 0.6356118321418762, .z = -1.1484493017196655});
+man_e.defineCMP<CRenderGL>(Col_CasaM.020 , CRenderGL{.modelMatrix = Model("assets/level3/Col_CasaM.020.obj", glm::vec3(0,0,0))});
+

@@ -1,0 +1,51 @@
+auto& VallaY7 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(VallaY7 );
+man_e.addTagToEntity<TCollisionable>(VallaY7 );
+man_e.addTagToEntity<TWall>(VallaY7 );
+man_e.defineCMP<CPhysics>(VallaY7 , CPhysics{.x= -0.13251447677612305 , .y = 0.5141037702560425, .z = -25.313241958618164});
+man_e.defineCMP<CRenderGL>(VallaY7 , CRenderGL{.modelMatrix = Model("assets/levelY/VallaY7.obj", glm::vec3(0,0,0))});
+
+auto& VallaY6 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(VallaY6 );
+man_e.addTagToEntity<TCollisionable>(VallaY6 );
+man_e.addTagToEntity<TWall>(VallaY6 );
+man_e.defineCMP<CPhysics>(VallaY6 , CPhysics{.x= 14.267419815063477 , .y = 0.5141037702560425, .z = -36.29572677612305});
+man_e.defineCMP<CRenderGL>(VallaY6 , CRenderGL{.modelMatrix = Model("assets/levelY/VallaY6.obj", glm::vec3(0,0,0))});
+
+auto& VallaY8 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(VallaY8 );
+man_e.addTagToEntity<TCollisionable>(VallaY8 );
+man_e.addTagToEntity<TWall>(VallaY8 );
+man_e.defineCMP<CPhysics>(VallaY8 , CPhysics{.x= -18.665746688842773 , .y = 0.5141037106513977, .z = -33.49494552612305});
+man_e.defineCMP<CRenderGL>(VallaY8 , CRenderGL{.modelMatrix = Model("assets/levelY/VallaY8.obj", glm::vec3(0,0,0))});
+
+auto& VallaY9 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(VallaY9 );
+man_e.addTagToEntity<TCollisionable>(VallaY9 );
+man_e.addTagToEntity<TWall>(VallaY9 );
+man_e.defineCMP<CPhysics>(VallaY9 , CPhysics{.x= -14.583492279052734 , .y = 0.5141037106513977, .z = -35.854248046875});
+man_e.defineCMP<CRenderGL>(VallaY9 , CRenderGL{.modelMatrix = Model("assets/levelY/VallaY9.obj", glm::vec3(0,0,0))});
+
+auto& VallaY5 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(VallaY5 );
+man_e.addTagToEntity<TCollisionable>(VallaY5 );
+man_e.addTagToEntity<TWall>(VallaY5 );
+man_e.defineCMP<CPhysics>(VallaY5 , CPhysics{.x= 19.052122116088867 , .y = 0.5141037106513977, .z = -33.402339935302734});
+man_e.defineCMP<CRenderGL>(VallaY5 , CRenderGL{.modelMatrix = Model("assets/levelY/VallaY5.obj", glm::vec3(0,0,0))});
+
+/// CUIDADO MIRAR SOLO POSICIONES
+
+auto& Corn1 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Corn1 );
+man_e.addTagToEntity<TCollisionable>(Corn1 );
+man_e.addTagToEntity<TWall>(Corn1 );
+man_e.defineCMP<CPhysics>(Corn1 , CPhysics{.x= -16.778867721557617 , .y = 1.1315714120864868, .z = -34.77737045288086}); <---------
+man_e.defineCMP<CRenderGL>(Corn1 , CRenderGL{.modelMatrix = Model("assets/levelY/Corn1.obj", glm::vec3(0,0,0))});
+
+auto& Corn2 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(Corn2 );
+man_e.addTagToEntity<TCollisionable>(Corn2 );
+man_e.addTagToEntity<TWall>(Corn2 );
+man_e.defineCMP<CPhysics>(Corn2 , CPhysics{.x= 16.80673599243164 , .y = 1.1315714120864868, .z = -34.77737045288086});   <---------
+man_e.defineCMP<CRenderGL>(Corn2 , CRenderGL{.modelMatrix = Model("assets/levelY/Corn2.obj", glm::vec3(0,0,0))});
+

@@ -1,0 +1,238 @@
+auto& ColiLaberinto2 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2 , CPhysics{.x= -15.469999313354492 , .y = 0.0, .z = -3.8446156978607178});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_001 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_001 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_001 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_001 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_001 , CPhysics{.x= -0.09416218101978302 , .y = 0.0, .z = 8.621926307678223});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_001 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2_001.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_003 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_003 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_003 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_003 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_003 , CPhysics{.x= -3.399717330932617 , .y = 0.0, .z = 2.392226457595825});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_003 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.003.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_002 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_002 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_002 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_002 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_002 , CPhysics{.x= 3.020688056945801 , .y = 0.0, .z = 2.392226457595825});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_002 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.002.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_005 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_005 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_005 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_005 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_005 , CPhysics{.x= -3.399717330932617 , .y = 0.0, .z = -62.508544921875});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_005 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.005.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_004 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_004 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_004 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_004 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_004 , CPhysics{.x= 3.020688056945801 , .y = 0.0, .z = -62.508544921875});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_004 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.004.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_006 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_006 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_006 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_006 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_006 , CPhysics{.x= -0.09416218101978302 , .y = 0.0, .z = -68.72808837890625});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_006 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.006.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_001 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_001 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_001 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_001 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_001 , CPhysics{.x= 14.852130889892578 , .y = 0.0, .z = -3.8446156978607178});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_001 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.001.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_007 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_007 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_007 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_007 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_007 , CPhysics{.x= 14.852130889892578 , .y = 0.0, .z = -56.42317199707031});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_007 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.007.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_008 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_008 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_008 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_008 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_008 , CPhysics{.x= -14.758895874023438 , .y = 0.0, .z = -56.42317199707031});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_008 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.008.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_009 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_009 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_009 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_009 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_009 , CPhysics{.x= 26.308086395263672 , .y = 0.0, .z = -30.122249603271484});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_009 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.009.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_010 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_010 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_010 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_010 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_010 , CPhysics{.x= -26.32654571533203 , .y = 0.0, .z = -30.122249603271484});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_010 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.010.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_011 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_011 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_011 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_011 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_011 , CPhysics{.x= -3.6707677841186523 , .y = 0.0, .z = -19.67160415649414});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_011 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.011.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_012 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_012 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_012 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_012 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_012 , CPhysics{.x= 3.5760297775268555 , .y = 0.0, .z = -44.234432220458984});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_012 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.012.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_013 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_013 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_013 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_013 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_013 , CPhysics{.x= -18.69833755493164 , .y = 0.0, .z = -18.908782958984375});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_013 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.013.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_014 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_014 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_014 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_014 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_014 , CPhysics{.x= 11.509363174438477 , .y = 0.0, .z = -30.122249603271484});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_014 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.014.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_015 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_015 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_015 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_015 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_015 , CPhysics{.x= 18.756160736083984 , .y = 0.0, .z = -7.924163818359375});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_015 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.015.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_016 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_016 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_016 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_016 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_016 , CPhysics{.x= 18.756160736083984 , .y = 0.0, .z = -22.41775894165039});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_016 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.016.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_017 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_017 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_017 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_017 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_017 , CPhysics{.x= -11.451541900634766 , .y = 0.0, .z = -7.771599769592285});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_017 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.017.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_018 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_018 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_018 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_018 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_018 , CPhysics{.x= -18.698339462280273 , .y = 0.0, .z = -45.14981460571289});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_018 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.018.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_019 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_019 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_019 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_019 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_019 , CPhysics{.x= -11.451541900634766 , .y = 0.0, .z = -37.674171447753906});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_019 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.019.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_020 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_020 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_020 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_020 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_020 , CPhysics{.x= 18.756160736083984 , .y = 0.0, .z = -45.14981460571289});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_020 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.020.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_021 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_021 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_021 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_021 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_021 , CPhysics{.x= 11.509363174438477 , .y = 0.0, .z = -14.94211196899414});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_021 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.021.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_022 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_022 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_022 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_022 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_022 , CPhysics{.x= -3.5944881439208984 , .y = 0.0, .z = -45.07353210449219});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_022 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.022.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_023 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_023 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_023 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_023 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_023 , CPhysics{.x= 15.018339157104492 , .y = 0.0, .z = -48.73507308959961});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_023 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.023.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_024 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_024 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_024 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_024 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_024 , CPhysics{.x= 8.000388145446777 , .y = 0.0, .z = -41.56455993652344});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_024 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.024.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_025 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_025 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_025 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_025 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_025 , CPhysics{.x= 4.262566089630127 , .y = 0.0, .z = -26.61327362060547});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_025 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.025.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_026 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_026 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_026 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_026 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_026 , CPhysics{.x= -11.29897689819336 , .y = 0.0, .z = -18.603656768798828});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_026 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.026.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_027 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_027 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_027 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_027 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_027 , CPhysics{.x= 4.415131568908691 , .y = 0.0, .z = -11.433141708374023});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_027 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.027.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_028 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_028 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_028 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_028 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_028 , CPhysics{.x= 10.060005187988281 , .y = 0.0, .z = -18.527374267578125});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_028 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.028.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_029 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_029 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_029 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_029 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_029 , CPhysics{.x= -18.62205696105957 , .y = 0.0, .z = -33.783790588378906});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_029 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.029.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_030 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_030 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_030 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_030 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_030 , CPhysics{.x= -10.688720703125 , .y = 0.0, .z = -48.88764190673828});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_030 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.030.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_031 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_031 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_031 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_031 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_031 , CPhysics{.x= -14.731670379638672 , .y = 0.0, .z = -26.460710525512695});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_031 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.031.obj", glm::vec3(0,0,0))});
+
+auto& ColiLaberinto2_032 = man_e.createEntity_withCMPS<CRenderGL, CPhysics, CCollision>();
+//man_e.addTagToEntity<TNotRenderizable>(ColiLaberinto2_032 );
+man_e.addTagToEntity<TCollisionable>(ColiLaberinto2_032 );
+man_e.addTagToEntity<TWall>(ColiLaberinto2_032 );
+man_e.defineCMP<CPhysics>(ColiLaberinto2_032 , CPhysics{.x= 22.188854217529297 , .y = 0.0, .z = -33.7075080871582});
+man_e.defineCMP<CRenderGL>(ColiLaberinto2_032 , CRenderGL{.modelMatrix = Model("assets/levelmaze/laberinto2/ColiLaberinto2.032.obj", glm::vec3(0,0,0))});
+
